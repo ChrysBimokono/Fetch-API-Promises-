@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="fetchAPI.js" defer></script>
+    <link rel="stylesheet" href="fetch.css">
     <title>FETCH API Sandbox</title>
 </head>
 <body>
-    <button id="getText">Get Text</button>
-    <button id="getUsers">Get Users</button>
-    <button id="getPosts">Get API Data</button>
-    <hr>
+ <div class="container">
+     <header class="title bg-dark"> FETCH API TUTORIAL PROJECT</header>
+     <div class="inner-container ">
+    <button class= "uppercase text-white bg-dark"id="getText">Get Text</button>
+    <button class= "uppercase text-white bg-dark" id="getUsers">Get Users</button>
+    <button class= "uppercase text-white bg-dark" id="getPosts">Get API Data</button>
+   
     <div id="output"></div>
     <form id="addPost">
         <div>
@@ -21,7 +28,9 @@
         <div>
             <textarea  id= "body" placeholder="Body"></textarea>
         </div>
-        <input type="submit" value="submit">
+        <input class= "uppercase text-white bg-dark" type="submit" value="submit">
     </form>
+</div>
+</div>
 </body>
 </html>
